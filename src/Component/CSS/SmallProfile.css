@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+.smallProfile {
+  margin-top: 70px;
+  z-index: 750;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 10%;
+  width: 300px;
+  background-color: white;
+}
+
+.smallprofile_container , .smallprofile_container1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  max-height: 100vh;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.08);
+  box-shadow: 0 1px 10px rgba(0,0,0,.08);
+  -webkit-transition: opacity .2s ease-out,visibility .2s ease-out;
+  transition: opacity .2s ease-out,visibility .2s ease-out;
+  border: 1px solid #f5f5f6;
+}
+
+.small_head1{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 5vh;
+  justify-content: space-between;
+}
+
+.firstsign_in{
+  width:80% !important;
+  color:white !important;
+  background-color: crimson !important;
+  font-size:18px !important;
+  font-family:"Titillium Web", sans-serif;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: safe;
+}
+
+.user_info > span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0px;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+  padding: 0px;
+}
+
+.small_closeprofile {
+  margin-left: 50% !important;
+}
+
+.smallprofile_second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(196, 191, 191);
+}
+
+.smallprofile_second > span {
+  font-size: 15px;
+  font-weight: 500;
+  font-weight: 500;
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 15px !important;
+  color: rgb(110, 105, 105);
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.smallprofile_second > span:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.smallprofile_third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid rgb(196, 191, 191); */
+}
+
+.smallprofile_third > span{
+    font-size: 15px;
+    font-weight: 500;
+    font-weight: 500;
+    font-family: "Titillium Web", sans-serif;
+    margin-left: 15px !important;
+    color: rgb(110, 105, 105);
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.smallprofile_third > span:hover{
+    color:black;
+    font-weight: 600;
+}

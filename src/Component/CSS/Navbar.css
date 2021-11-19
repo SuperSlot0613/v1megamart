@@ -1,0 +1,93 @@
+.navbar {
+  width: 100%;
+  margin-top: 0;
+  padding-top: 10px;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+  z-index:600;
+  position:fixed;
+}
+
+.navbar_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_items {
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.form_tag{
+    width:40vw;
+    margin-left:30px;
+}
+
+.search_input{
+    width:70%;
+    height:40px;
+}
+.search_btn{
+    width:25%;
+    height:40px;
+    font-size: 18px;
+    font-family: 500;
+}
+
+.basket_icons{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.nav_icons{
+    display:flex;
+    flex-direction: column;
+    margin-left:30px;
+    align-items:center;
+    margin-top:0px;
+    cursor: pointer;
+}
+
+.nav_icons > span{
+    font-size:12px;
+}
+
+@media screen and (max-width:990px) {
+
+    .nav_items{
+        margin-left:0px;
+    }
+
+    .form_tag{
+        margin-left:0px;
+        width:100%;
+    }
+
+    .basket_icons{
+        margin-top: 10px;
+        align-items:flex-start;
+    }
+
+    .nav_icons{
+        margin-left:0px;
+        align-items:center;
+    }
+    
+    .search_input{
+        width:70%;
+    }
+    .search_btn{
+        width:25%;
+    }
+
+    .logo_img > img{
+        /* margin-left:10%; */
+        width:50vw !important;
+        height:6vh !important;
+    }
+}

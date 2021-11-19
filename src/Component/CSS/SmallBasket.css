@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+.smallbasket {
+  margin-top: 70px;
+  z-index: 700;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 4%;
+  width: 300px;
+}
+
+.smallB_container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* height:100%; */
+  width: 100%;
+  max-height: 100vh;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.08);
+  box-shadow: 0 1px 10px rgba(0,0,0,.08);
+  -webkit-transition: opacity .2s ease-out,visibility .2s ease-out;
+  transition: opacity .2s ease-out,visibility .2s ease-out;
+  border: 1px solid #f5f5f6;
+}
+
+.smallb_container2 {
+  height: 100%;
+}
+
+.small_head {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(119, 116, 116);
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.small_close {
+  margin-left: 15% !important;
+}
+
+.small_product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1vh;
+  border-bottom: 1px solid rgb(119, 116, 116);
+}
+
+.small_image {
+  width: 30vw;
+}
+
+.small_image > img {
+  margin-left: 10%;
+  width: 7vw;
+  height: 20vh;
+}
+
+.smallp_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50vw;
+  margin-left: 5%;
+  text-overflow: clip;
+}
+
+.smallp_text > h5 {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.smallp_text > p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Titillium Web", sans-serif;
+  text-overflow: clip;
+}
+
+.smallp_text > p > span {
+  font-size: 14px;
+  margin-left: 50%;
+}
+
+.small_subtotal > h5 {
+  float: right;
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.small_button {
+  width: 80%;
+  margin-left: 10% !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  font-family: "Titillium Web", sans-serif !important;
+  color: white !important;
+  background-color: rgb(223, 135, 63) !important;
+}
+
+.small_last {
+  border-top: 1px solid rgb(119, 116, 116);
+  height: 12vh;
+  width: 100%;
+  text-align: center;
+}
+
+.small_last > p {
+  font-size: 14px;
+  color: rgb(134, 130, 130);
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 990px) {
+  .small_image > img {
+    margin-left: 10%;
+    width: 90%;
+    height: 30vh;
+  }
+}

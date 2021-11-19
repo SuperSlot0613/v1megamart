@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+.loginpage {
+  display: block;
+  height: 100% !important;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 800;
+  top: 10px;
+  left: 0;
+  color: #454545;
+  background:rgba(69, 69, 69,0.3);
+  /* background: rgba(0, 151, 19, 0.1); */
+  /* opacity: 0.5; */
+  font-weight: 500;
+  overflow-y: scroll;
+}
+
+.loginpage_container {
+  opacity: 1;
+  width: 100%;
+  /* position:absolute; */
+  /* background: gray; */
+  transform: translate(0);
+  pointer-events: unset;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  /* -webkit-transform: translateY(-50px); */
+  /* transform: translateY(-50px); */
+}
+
+.loginpage_card {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  margin: 0 auto;
+  /* overflow: auto; */
+  height: 730px;
+  text-transform: none;
+  text-align: left;
+  letter-spacing: 0;
+  background: white;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.08);
+}
+
+.login_close {
+  position: relative;
+  right: 0px;
+  left: 365px;
+  top: 10px;
+}
+
+.login_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.login_content > h5 {
+  font-size: 24px;
+  font-weight: 550;
+  margin-bottom: 30px;
+}
+
+.login_signlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+.login_facebook,
+.login_google {
+  width: 140px;
+  height: 46px;
+  border: 2px solid #3b5998;
+  color: #3b5998;
+  text-transform: uppercase;
+  /* margin-right: 1px; */
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.fb_logo {
+  width: 30px !important;
+  height: 40px !important;
+}
+
+.or-separator {
+  text-align: center;
+  color: #a9a9a9;
+  font: 700 10pt SourceSansPro;
+  margin-top: 30px;
+}
+
+.or-separator > hr {
+  width: 20%;
+  display: inline-block;
+  size: 2px;
+}
+
+.login_form1{
+  display:flex;
+  flex-direction: column;
+  width:80vw;
+}
+
+.login_input >.login_form1> .inputtag_div > input,.text_inputtag {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e3e3e3;
+  margin: 10px 0 4px;
+  padding-bottom: 4px;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.continue_btn {
+  width: 50% !important;
+  font-size: 18px !important;
+  font-family: "Titillium Web", sans-serif !important;
+  background-color: #d5a249 !important;
+  color: #fff !important;
+  width: 170px !important;
+  height: 40px !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  padding: 10px !important;
+  margin: 20px 0 !important;
+}
+
+.continue_btn:hover {
+  background-color: #d5a249;
+}
+
+@media screen and (max-width: 570px) {
+  .loginpage {
+    width: 100%;
+    margin: 0;
+    top: 60px;
+    overflow-x: hidden;
+  }
+
+  .loginpage_container {
+    width: 100%;
+  }
+
+  .loginpage_card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .login_close {
+    position: relative;
+    right: 0px;
+    left: 315px;
+    top: 10px;
+  }
+}

@@ -1,0 +1,120 @@
+.footertitle {
+  font-family: "Titillium Web";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+  z-index:10;
+}
+#footerend {
+  width: 100%;
+  margin-top: 10vh;
+  /* height:45vh; */
+  /* position:absolute; */
+  background-color: #6264b4;
+  z-index:10;
+}
+.footertext {
+  font-family: "Titillium Web";
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#subbtn {
+  font-family: "Jura";
+  font-size: 18px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 280;
+  line-height: 20px;
+  background-color: #1b21b6;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#footericonsbody {
+  background: #f5f8ff;
+  width: 100%;
+}
+.facebook {
+  width: 51px;
+  background: #1b21b6;
+  height: 51px;
+  text-align: center;
+  border-radius: 50px;
+}
+.instagram {
+  width: 51px;
+  background: #1b21b6;
+  height: 51px;
+  text-align: center;
+  border-radius: 50px;
+}
+.linkedin {
+  width: 51px;
+  background: #1b21b6;
+  height: 51px;
+  text-align: center;
+  border-radius: 50px;
+}
+.iconscontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rtitles {
+  font-family: "Jura";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+
+  /* text-align: left; */
+}
+.redirecttitles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.copyrighttext {
+  font-family: "Jura";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  color: #939393;
+
+  letter-spacing: 0em;
+  text-align: left;
+}
+#homepagemedia {
+  background-color: #f5f8ff;
+  margin-top: 33%;
+  /* height: 3% !important;; */
+  /* width: 100%; */
+}
+@media screen and (max-width: 570px) {
+  #homepagemedia {
+    margin-top: 0%;
+  }
+}
