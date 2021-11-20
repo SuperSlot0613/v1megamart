@@ -167,6 +167,7 @@
   .loginpage_card {
     width: 100%;
     margin: 0;
+    height:900px;
   }
 
   .login_close {

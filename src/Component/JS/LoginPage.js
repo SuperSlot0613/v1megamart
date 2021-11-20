@@ -48,6 +48,8 @@ function LoginPage() {
     });
   }, []);
 
+  // console.log(userInfo);
+
   function configureCaptcha() {
     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
       "sign-in-button",
@@ -107,6 +109,8 @@ function LoginPage() {
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
           });
           dispatch(SET_USER(UserInfo));
+        } else {
+          dispatch(SET_USER(userInfo[findMobile1]?.data));
         }
         dispatch(SMALL_LOGIN(false));
       })
@@ -137,6 +141,8 @@ function LoginPage() {
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
           });
           dispatch(SET_USER(UserInfo));
+        }else {
+          dispatch(SET_USER(userInfo[findEmail1]?.data));
         }
         dispatch(SMALL_LOGIN(false));
       })
@@ -147,12 +153,15 @@ function LoginPage() {
 
   const register = async (e) => {
     e.preventDefault();
+    console.log(userInfo);
+
     const findEmail = userInfo.findIndex(
       (userinfo) => userinfo.data.FirstData === UserInfo.FirstData
     );
     const findMobile = userInfo.findIndex(
       (userinfo) => userinfo.data.FirstData === UserInfo.FirstData
     );
+    console.log(userInfo[findMobile]?.data);
     if (!isNaN(UserInfo.FirstData)) {
       if (findMobile >= 0) {
         onSignInSubmit(e);
@@ -238,18 +247,13 @@ function LoginPage() {
                         onChange={(e) => {
                           setInfo({ ...UserInfo, Enterotp: e.target.value });
                         }}
-                        onClick={(e) => onSubmitOTP(e)}
                       />
                     </div>
                     <div className="col-12">
                       <button
                         className="btn btn-primary continue_btn"
                         type="submit"
-                        onClick={(e) => {
-                          if (UserInfo.FirstData !== "") {
-                            register(e);
-                          }
-                        }}
+                        onClick={(e) => onSubmitOTP(e)}
                       >
                         CONTINUE
                       </button>

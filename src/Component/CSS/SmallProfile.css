@@ -88,24 +88,28 @@
 .smallprofile_third {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  width:70%;
   /* border-bottom: 1px solid rgb(196, 191, 191); */
 }
 
-.smallprofile_third > span{
+.smallprofile_third > Button{
     font-size: 15px;
     font-weight: 500;
     font-weight: 500;
     font-family: "Titillium Web", sans-serif;
-    margin-left: 15px !important;
-    color: rgb(110, 105, 105);
+    margin-left: 100px !important;
+    color: white;
     cursor: pointer;
     margin-top: 2px;
+    width:100%;
+    background-color:crimson;
 }
 
-.smallprofile_third > span:hover{
-    color:black;
+.smallprofile_third > Button:hover{
     font-weight: 600;
+    background-color:crimson;
 }

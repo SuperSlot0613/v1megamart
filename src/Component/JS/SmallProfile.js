@@ -61,7 +61,7 @@ function SmallProfile() {
             <span>Edit Profile</span>
           </div>
           <div className="smallprofile_third" style={{ marginTop: "5px" }}>
-            <button onClick={() => dispatch(SET_USERLOGOUT())}>Log Out</button>
+            <Button onClick={() => dispatch(SET_USERLOGOUT())}>Log Out</Button>
           </div>
         </div>
       )}
