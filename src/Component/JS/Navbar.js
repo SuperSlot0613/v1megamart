@@ -134,7 +134,7 @@ function Navbar() {
                   }}
                 >
                   <PersonIcon />
-                  <span>saurabh@gmail.com</span>
+                  <span>Profile</span>
                 </li>
                 <li
                   className="nav-item nav_icons"

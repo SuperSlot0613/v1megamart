@@ -2,12 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   detail: [],
-  user: null,
+  user: [],
   useruid: null,
   mobile: null,
   smallBasket: false,
-  smallProfile:false,
-  smallLogin:false,
+  smallProfile: false,
+  smallLogin: false,
 };
 
 export const detailSlice = createSlice({
@@ -22,7 +22,13 @@ export const detailSlice = createSlice({
     SET_USER: (state, action) => {
       return {
         ...state,
-        user: action.payload,
+        user: [...state.user, action.payload],
+      };
+    },
+    SET_USERLOGOUT: (state, action) => {
+      return {
+        ...state,
+        user: [],
       };
     },
     SET_USERUID: (state, action) => {
@@ -53,7 +59,8 @@ export const {
   SET_USERUID,
   SMALL_BASKET,
   SMALL_PROFILE,
-  SMALL_LOGIN
+  SMALL_LOGIN,
+  SET_USERLOGOUT,
 } = detailSlice.actions;
 
 export const selectDetails = (state) => state.detail.detail;

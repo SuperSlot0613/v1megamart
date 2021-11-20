@@ -129,6 +129,10 @@
   overflow: visible;
 }
 
+.disableotp{
+  display:none;
+}
+
 .continue_btn {
   width: 50% !important;
   font-size: 18px !important;

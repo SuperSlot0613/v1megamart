@@ -2,7 +2,12 @@ import { IconButton } from "@mui/material";
 import React from "react";
 import "../CSS/SmallProfile.css";
 import CloseIcon from "@mui/icons-material/Close";
-import { selectUser, SMALL_LOGIN, SMALL_PROFILE } from "../../features/detailSlice";
+import {
+  selectUser,
+  SET_USERLOGOUT,
+  SMALL_LOGIN,
+  SMALL_PROFILE,
+} from "../../features/detailSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "@mui/material";
 
@@ -12,10 +17,18 @@ function SmallProfile() {
 
   return (
     <div className="smallProfile">
-      {user === null ? (
-        <div className="smallprofile_container1" onMouseLeave={()=>dispatch(SMALL_PROFILE(false))}>
+      {user.length === 0 ? (
+        <div
+          className="smallprofile_container1"
+          onMouseLeave={() => dispatch(SMALL_PROFILE(false))}
+        >
           <div className="small_head1">
-            <Button className="firstsign_in" onClick={()=> dispatch(SMALL_LOGIN(true))}>SIGN IN</Button>
+            <Button
+              className="firstsign_in"
+              onClick={() => dispatch(SMALL_LOGIN(true))}
+            >
+              SIGN IN
+            </Button>
             <p>To Order the Item Please Sign In</p>
           </div>
         </div>
@@ -23,8 +36,10 @@ function SmallProfile() {
         <div className="smallprofile_container">
           <div className="small_head">
             <div className="user_info">
-              <span style={{ fontWeight: "600" }}>Saurabh Yadav</span>
-              <span>9082502271</span>
+              <span style={{ fontWeight: "600" }}>
+                {user[0]?.FirstName} {user[0]?.LastName}
+              </span>
+              <span>{user[0]?.FirstData}</span>
             </div>
             <IconButton
               className="small_closeprofile"
@@ -43,10 +58,10 @@ function SmallProfile() {
             <span>Coupons</span>
             <span>Saved Cards</span>
             <span>Saved Addresses</span>
+            <span>Edit Profile</span>
           </div>
           <div className="smallprofile_third" style={{ marginTop: "5px" }}>
-            <span>Edit Profile</span>
-            <span>Log Out</span>
+            <button onClick={() => dispatch(SET_USERLOGOUT())}>Log Out</button>
           </div>
         </div>
       )}
